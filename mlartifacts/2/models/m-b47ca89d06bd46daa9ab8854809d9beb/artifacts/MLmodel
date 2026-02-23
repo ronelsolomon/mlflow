@@ -1,0 +1,44 @@
+artifact_path: mlflow-artifacts:/2/models/m-b47ca89d06bd46daa9ab8854809d9beb/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.19
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.10.0
+model_id: m-b47ca89d06bd46daa9ab8854809d9beb
+model_size_bytes: 56624
+model_uuid: m-b47ca89d06bd46daa9ab8854809d9beb
+prompts: null
+run_id: 4130f79606654cdcaca02faed959d7ff
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "sepal_length", "required": true}, {"type":
+    "double", "name": "sepal_width", "required": true}, {"type": "double", "name":
+    "petal_length", "required": true}, {"type": "double", "name": "petal_width", "required":
+    true}, {"type": "double", "name": "sepal_area", "required": true}, {"type": "double",
+    "name": "petal_area", "required": true}, {"type": "double", "name": "sepal_length_to_width_ratio",
+    "required": true}, {"type": "double", "name": "petal_length_to_width_ratio", "required":
+    true}, {"type": "double", "name": "log_sepal_length", "required": true}, {"type":
+    "double", "name": "log_petal_length", "required": true}, {"type": "double", "name":
+    "sepal_length_squared", "required": true}, {"type": "double", "name": "petal_length_squared",
+    "required": true}, {"type": "double", "name": "feature_sum", "required": true},
+    {"type": "double", "name": "feature_mean", "required": true}]'
+  outputs: '[{"type": "long", "name": "target", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-02-22 23:40:33.804721'

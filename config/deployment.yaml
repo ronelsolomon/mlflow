@@ -1,0 +1,32 @@
+development:
+  mlflow_tracking_uri: "http://localhost:5000"
+  spark_master: "local[*]"
+  kafka_bootstrap_servers: "localhost:9092"
+  redis_host: "localhost"
+  redis_port: 6379
+  feature_store_path: "feature_store.db"
+  model_registry_uri: "sqlite:///mlflow.db"
+  monitoring_enabled: true
+  log_level: "INFO"
+
+staging:
+  mlflow_tracking_uri: "http://staging-mlflow:5000"
+  spark_master: "spark://staging-spark-master:7077"
+  kafka_bootstrap_servers: "staging-kafka:9092"
+  redis_host: "staging-redis"
+  redis_port: 6379
+  feature_store_path: "/data/feature_store.db"
+  model_registry_uri: "postgresql://user:pass@staging-postgres:5432/mlflow"
+  monitoring_enabled: true
+  log_level: "INFO"
+
+production:
+  mlflow_tracking_uri: "https://mlflow.company.com"
+  spark_master: "spark://prod-spark-master:7077"
+  kafka_bootstrap_servers: "prod-kafka-1:9092,prod-kafka-2:9092,prod-kafka-3:9092"
+  redis_host: "prod-redis-cluster"
+  redis_port: 6379
+  feature_store_path: "/data/feature_store.db"
+  model_registry_uri: "postgresql://user:pass@prod-postgres:5432/mlflow"
+  monitoring_enabled: true
+  log_level: "WARNING"

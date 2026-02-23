@@ -1,0 +1,16 @@
+feature_name,description,data_type,created_at
+target,Iris species class,numeric,2026-02-22 22:48:36
+sepal_area,Area of sepal (length * width),numeric,2026-02-22 23:33:00
+petal_area,Area of petal (length * width),numeric,2026-02-22 23:33:00
+sepal_length_to_width_ratio,Ratio of sepal length to width,numeric,2026-02-22 23:33:00
+petal_length_to_width_ratio,Ratio of petal length to width,numeric,2026-02-22 23:33:00
+log_sepal_length,Log transformed sepal length,numeric,2026-02-22 23:33:00
+log_petal_length,Log transformed petal length,numeric,2026-02-22 23:33:00
+sepal_length_squared,Squared sepal length,numeric,2026-02-22 23:33:00
+petal_length_squared,Squared petal length,numeric,2026-02-22 23:33:00
+feature_sum,Sum of all four original features,numeric,2026-02-22 23:33:00
+feature_mean,Mean of all four original features,numeric,2026-02-22 23:33:00
+sepal_length,Length of sepal in cm,numeric,2026-02-22 23:33:00
+sepal_width,Width of sepal in cm,numeric,2026-02-22 23:33:00
+petal_length,Length of petal in cm,numeric,2026-02-22 23:33:00
+petal_width,Width of petal cm,numeric,2026-02-22 23:33:00
