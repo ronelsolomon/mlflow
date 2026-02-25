@@ -1,6 +1,0 @@
-feature_name,description,data_type,created_at
-sepal_length,Length of sepal in cm,numeric,2026-02-22 22:48:36
-sepal_width,Width of sepal in cm,numeric,2026-02-22 22:48:36
-petal_length,Length of petal in cm,numeric,2026-02-22 22:48:36
-petal_width,Width of petal in cm,numeric,2026-02-22 22:48:36
-target,Iris species class,numeric,2026-02-22 22:48:36
